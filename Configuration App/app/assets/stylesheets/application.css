@@ -105,7 +105,7 @@ select.wifiNetworkInputs {
 	background-color: #469c05;
 	font-size: 3rem;
 	color: #fff;
-	border-radius: 20px;
+	border-radius: 10px;
 	-webkit-appearance: button-bevel;
 	-moz-appearance: button-bevel;
 	appearance: button-bevel;
