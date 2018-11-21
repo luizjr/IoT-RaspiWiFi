@@ -79,7 +79,7 @@ select.wifiNetworkInputs {
 	font-size: 2.5rem;
 	padding: 1em;
 	margin: 0;
-	border-radius: 3px;
+	border-radius: 10px;
 	cursor: pointer;
 	height: auto;
 	-webkit-appearance: none;
@@ -90,9 +90,10 @@ select.wifiNetworkInputs {
 .wifiNetworkInputs{
 	max-width:680px;
 	width: 100vw;
-	padding:1em 0;
+	padding:1em 0.6em;
 	font-size: .8em;
 	color: #999;
+	border-radius: 10px;
 	background: #111;
 	border:#999 solid 1px;
 }
@@ -101,12 +102,13 @@ select.wifiNetworkInputs {
 	width: 310px;
 	height: 150px;
 	margin:1.5em 0 0 0;
-	background-color: #deab04;
+	background-color: #469c05;
 	font-size: 3rem;
 	color: #fff;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
+	border-radius: 20px;
+	-webkit-appearance: button-bevel;
+	-moz-appearance: button-bevel;
+	appearance: button-bevel;
 }
 
   /* Wifi Icon
