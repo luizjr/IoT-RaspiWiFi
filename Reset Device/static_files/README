@@ -1,0 +1,10 @@
+The ultimate locations of these files are:
+
+dhcpcd.conf[.aphost][.apclient] - /etc/dhcpcd.conf
+rc.local[.aphost][.apclient] - /etc/rc.local
+hostapd.conf - /etc/hostapd/hostapd.conf
+default_hostapd - /etc/default/hostapd
+dnsmasq.conf - /etc/dnsmasq.conf
+
+*.aphost denotes files used when in configuration mode
+*.apclient denotes files used when in regular use mode

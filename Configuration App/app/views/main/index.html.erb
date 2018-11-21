@@ -1,0 +1,24 @@
+<div id="mainContent">
+  <h2>Headless RasPi: WiFI Setup</h2>
+  <div class="wifiIcon" /></div>
+  <%=form_tag("/main/save_credentials", method: "get") do%>
+
+    <ul>
+      <li><%=label_tag(:ssid, "Please select the WiFi Network:")%></li>
+      <li class="wifiNetwork">
+        <select id="ssid" name="ap_info", class="wifiNetworkInputs">
+          <%for ap in @wifi_ap_hash do%>
+              <option value='<%=ap[:ssid]%>+<%=ap[:encryption_type]%>'><%=ap[:ssid]%></option>
+          <%end%>
+        </select>
+      </li>
+
+      <li><%=label_tag(:wifi_key, "Please enter your WiFi password:")%></li>
+      <li>
+        <%=password_field_tag(:wifi_key, nil, class: "wifiNetworkInputs")%>
+      </li>
+
+      <%=submit_tag("Connect!", class: "wifiConnectButton")%>
+    </ul>
+
+  <%end%>
