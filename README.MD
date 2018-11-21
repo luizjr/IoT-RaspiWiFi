@@ -33,7 +33,7 @@ sudo sh start.sh
 ### USO:
 
 * Connect to the **IoT RaspiWiFi** SSID Open Access Point using any other WiFi enabled device.
-* Navigate to http://10.0.0.1:10 **(Port:10 IP:10.0.0.1)** using any web browser on the device you connected with. It may take several seconds (or a minute) before the server is ready to accept requests.  
+* Navigate to http://10.0.0.1 **(Port:80 IP:10.0.0.1)** using any web browser on the device you connected with. It may take several seconds (or a minute) before the server is ready to accept requests.  
 * If you're connected to the RasPi via WiFi, it will give you an IP in its network but the web page is timing out (web server still not loaded), then just wait a couple seconds till it appears (patiently)...
 * Select the **WiFi SSID** connection you'd like your Raspberry Pi to connect to from the drop down list and enter its wireless **password** on the page provided. If no encryption is enabled, leave the password box blank.
 * Click the **Connect** button.
