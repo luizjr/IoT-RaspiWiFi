@@ -4,7 +4,7 @@
   <%=form_tag("/main/save_credentials", method: "get") do%>
 
     <ul>
-      <li><%=label_tag(:ssid, "Please select the WiFi Network:")%></li>
+      <li><%=label_tag(:ssid, "Por favor, selecione a Rede WiFi:")%></li>
       <li class="wifiNetwork">
         <select id="ssid" name="ap_info", class="wifiNetworkInputs">
           <%for ap in @wifi_ap_hash do%>
@@ -13,12 +13,14 @@
         </select>
       </li>
 
-      <li><%=label_tag(:wifi_key, "Please enter your WiFi password:")%></li>
+      <li><%=label_tag(:wifi_key, "Por favor, digite a senha do WiFi:")%></li>
       <li>
         <%=password_field_tag(:wifi_key, nil, class: "wifiNetworkInputs")%>
       </li>
 
-      <%=submit_tag("Connect!", class: "wifiConnectButton")%>
+      <%=submit_tag("Conectar!", class: "wifiConnectButton")%>
     </ul>
+	<br>
+	<br>
 
   <%end%>

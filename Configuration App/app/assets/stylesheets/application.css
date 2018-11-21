@@ -1,11 +1,22 @@
 /* General
 ---------------------------------------------------------*/
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/OpenSans-Regular.woff2') format('woff2'),
+        url('fonts/Open_Sans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *, :after, :before {
 	box-sizing: border-box;
 }
 body{
 	background-color: #000;
 	margin:0;
+	font-family: 'Open Sans';
+	font-weight: normal;
+	font-style: normal;
 }
 
 div#mainContent{
